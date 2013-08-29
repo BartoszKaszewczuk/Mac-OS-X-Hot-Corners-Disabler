@@ -1,6 +1,6 @@
 ---------------------------------------------------
 -- OS X Hot Corners Disabler
--- Version 1.0
+-- Version 1.1
 --
 -- Copyright © 2013 Bartosz Kaszewczuk
 -- Released under the MIT license
@@ -20,23 +20,22 @@ set pathApp to "/Applications/League of Legends.app/Contents/LOL/RADS/projects/l
 -- Launch app
 tell application pathApp to launch
 
-tell application "System Events"
-	tell expose preferences
-		-- Backup all hot corners settings
-		set topLeftSetting to get the activity of the top left screen corner
-		set topRightSetting to get the activity of the top right screen corner
-		set bottomLeftSetting to get the activity of the bottom left screen corner
-		set bottomRightSetting to get the activity of the bottom right screen corner
-		
-		-- Clear all hot corners settings
-		set activity of the top left screen corner to "none"
-		set activity of the top right screen corner to "none"
-		set activity of the bottom left screen corner to "none"
-		set activity of the bottom right screen corner to "none"
-	end tell
+tell application "System Events" to tell expose preferences
+	-- Backup all hot corners settings
+	set topLeftSetting to get the activity of the top left screen corner
+	set topRightSetting to get the activity of the top right screen corner
+	set bottomLeftSetting to get the activity of the bottom left screen corner
+	set bottomRightSetting to get the activity of the bottom right screen corner
+	
+	-- Clear all hot corners settings
+	set activity of the top left screen corner to "none"
+	set activity of the top right screen corner to "none"
+	set activity of the bottom left screen corner to "none"
+	set activity of the bottom right screen corner to "none"
 end tell
 
 -- Wait for app to launch
+delay 5 -- Fail safe timer
 repeat until application pathApp is running
 	delay 1
 end repeat
@@ -47,11 +46,9 @@ repeat while application pathApp is running
 end repeat
 
 -- Restores all hot corners settings
-tell application "System Events"
-	tell expose preferences
-		set activity of the top left screen corner to topLeftSetting
-		set activity of the top right screen corner to topRightSetting
-		set activity of the bottom left screen corner to bottomLeftSetting
-		set activity of the bottom right screen corner to bottomRightSetting
-	end tell
+tell application "System Events" to tell expose preferences
+	set activity of the top left screen corner to topLeftSetting
+	set activity of the top right screen corner to topRightSetting
+	set activity of the bottom left screen corner to bottomLeftSetting
+	set activity of the bottom right screen corner to bottomRightSetting
 end tell
