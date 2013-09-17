@@ -1,3 +1,5 @@
+![Hot Corners Disabler](http://cl.ly/image/1c1a0d3e1V1v/hot-corners-disabler.png)
+
 Hot Corners Disabler
 ========================
 By Bartosz Kaszewczuk
