@@ -4,7 +4,7 @@ By Bartosz Kaszewczuk
 
 What is it?
 -----------
-Hot Corners Disabler is an AppleScript wrapper that disables hot corners while certain app is running. It is especially useful for fullscreen apps e.g. games.
+Hot Corners Disabler is an AppleScript wrapper that disables hot corners while certain app is running. It is especially useful for running fullscreen apps, such as games, in multi-monitor setups.
 
 How do I use it?
 ----------------
