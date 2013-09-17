@@ -27,7 +27,7 @@ set appAutoName to "LoLLauncher.app"
 set appAutoLocationToSearch to "/Applications/'.League of Legends.app'/"
 
 -- Static application path (required if appAutoPathUpdate is set to FALSE)
-set appStaticPath to "/Applications/.League of Legends.app/Contents/LoL/RADS/projects/lol_launcher/releases/0.0.0.97/deploy/LoLLauncher.app" -- 
+set appStaticPath to "/Applications/.League of Legends.app/Contents/LoL/RADS/projects/lol_launcher/releases/0.0.0.97/deploy/LoLLauncher.app"
 
 --------------------------------------------------------------------------------------------------------
 --------------------------- ! No settings to be changed below this line ! ---------------------------

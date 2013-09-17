@@ -19,7 +19,7 @@ Using Hot Corners Disabler is super easy.
 Like so:
 ```applescript
 ...
-set pathApp to "/Applications/League of Legends.app/Contents/LOL/RADS/projects/lol_launcher/releases/0.0.0.90/deploy/LoLLauncher.app" as text...```
+set appStaticPath to "/Applications/.League of Legends.app/Contents/LoL/RADS/projects/lol_launcher/releases/0.0.0.97/deploy/LoLLauncher.app"...```
 Can I customise it?
 -------------------
 Of course! Do whatever you want! You can even add an icon to make this wrapper look badass.
